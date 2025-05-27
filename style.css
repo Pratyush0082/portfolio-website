@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f7f9fc;
+  background-color: #f4f7fc;
   color: #333;
 }
 
@@ -27,8 +26,18 @@ header.hero {
   border-bottom-right-radius: 20px;
 }
 
+header.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
 header.hero h1 span {
   color: #ffcc70;
+}
+
+header.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 
 nav {
@@ -39,7 +48,7 @@ nav a {
   color: #ffcc70;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -47,11 +56,11 @@ nav a:hover {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 h2 {
-  color: #333;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -70,6 +79,7 @@ footer {
   padding: 20px 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  font-size: 0.9rem;
 }
 
 a {
@@ -79,4 +89,15 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header.hero h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 10px;
+  }
 }

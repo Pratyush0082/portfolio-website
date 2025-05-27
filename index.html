@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pratyush Kumar Sahu - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
+
+  <header class="hero" data-aos="fade-down">
     <div class="container">
       <h1>Hi, I'm <span>Pratyush Kumar Sahu</span></h1>
       <p>Aspiring Frontend Developer | HTML • CSS • JavaScript</p>
@@ -20,25 +22,25 @@
     </div>
   </header>
 
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
       <p>I'm a beginner web developer learning to build real-world applications. This portfolio showcases my journey, from learning HTML/CSS to building responsive websites and more.</p>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section" data-aos="fade-right">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project">
+      <div class="project" data-aos="zoom-in">
         <h3>Portfolio Website</h3>
         <p>This website! Built using HTML and CSS to document and showcase my learning as a frontend developer.</p>
       </div>
-      <!-- Add more projects here -->
+      <!-- You can add more projects here -->
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="fade-left">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: pratyush@example.com</p>
@@ -51,5 +53,13 @@
       <p>© 2025 Pratyush Kumar Sahu</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
