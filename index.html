@@ -3,110 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pratyush Kumar Sahu - Portfolio</title>
+  <title>Pratyush's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="hero" data-aos="fade-down">
-    <div class="container">
-      <h1>Hi, I'm <span>Pratyush Kumar Sahu</span></h1>
-      <p><span id="typed-text"></span></p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌓 Toggle Dark Mode</button>
-    </div>
+  <header class="hero">
+    <h1>Hello, I'm <span>Pratyush</span></h1>
+    <p>Welcome to my personal portfolio website</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section" data-aos="fade-up">
-    <div class="container">
-      <img src="images/pratyushhhhhhhhhhhhhhhh.jpg" alt="Pratyush Kumar Sahu" class="profile-pic" />
-      <h2>About Me</h2>
-      <p>I’m Pratyush Kumar Sahu, a third-year Information Technology student at KIIT. I specialize in frontend development and AI/ML, with hands-on experience in React, Flask, TensorFlow, and full-stack systems. Passionate about building intelligent solutions and real-world applications.</p>
+  <section id="about" class="section container">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+    <h2>About Me</h2>
+    <p>I’m a passionate developer eager to build impactful solutions with clean code and creativity.</p>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Sample Project</h3>
+      <p>A brief description of my project.</p>
+      <a href="#">View Code</a>
+      <a href="#">Live Demo</a>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section" data-aos="fade-right">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project" data-aos="zoom-in">
-        <h3>Portfolio Website</h3>
-        <p>This personal portfolio is built with HTML and CSS, showcasing my work in frontend and ML. Hosted on GitHub Pages.</p>
-        <a href="https://pratyush0082.github.io/portfolio-website/" target="_blank">🔗 Live Demo</a> |
-        <a href="https://github.com/Pratyush0082/portfolio-website" target="_blank">💻 GitHub Repo</a>
-      </div>
-
-      <div class="project" data-aos="zoom-in">
-        <h3>Weather Dashboard</h3>
-        <p>Real-time weather application using OpenWeatherMap API. Displays current temperature, a 5-day forecast, and updates UI based on weather.</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in">
-        <h3>Music Recommendation System</h3>
-        <p>Flask + Python project recommending music based on user mood using ML algorithms and sentiment analysis.</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in">
-        <h3>Chaotic Whispers: Stock Trend Prediction</h3>
-        <p>Deep learning system using LSTM and Transformer models to predict stock market trends by analyzing financial news and sentiment data.</p>
-      </div>
-    </div>
+  <section id="contact" class="section container">
+    <h2>Contact Me</h2>
+    <p>📧 Email: you@example.com</p>
+    <p>📞 Phone: +91-XXXXXXXXXX</p>
+    <p><a href="resume.pdf" download class="resume-btn">📄 Download Resume</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/pratyush-kumar-sahu-157613259/" target="_blank" class="linkedin-btn">
+        🔗 Connect on LinkedIn
+      </a>
+    </p>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section" data-aos="fade-left">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:pratyushkumarsahu47@gmail.com">pratyushkumarsahu47@gmail.com</a></p>
-      <p>Phone: 7978893102</p>
-      <p>GitHub: <a href="https://github.com/Pratyush0082" target="_blank">Pratyush0082</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/pratyush-kumar-sahu-157613259/" target="_blank">My LinkedIn Profile</a></p>
-      <p><a href="resume.pdf" download class="resume-btn">📄 Download Resume</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 Pratyush Kumar Sahu</p>
-    </div>
+    <p>© 2025 Pratyush Kumar Sahu</p>
   </footer>
-
-  <!-- AOS Animation Script -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
-
-  <!-- Typing Animation Script -->
-  <script>
-    var typed = new Typed("#typed-text", {
-      strings: ["Aspiring Developer", "AI/ML Enthusiast", "Frontend Engineer", "Full Stack Learner"],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
-
-  <!-- Dark Mode Script -->
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
 
 </body>
 </html>

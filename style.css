@@ -78,17 +78,19 @@ body.dark .dark-mode-toggle {
   padding: 4rem 0;
 }
 
-/* About Section */
+/* Profile Picture */
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #3498db;
+  border: 4px solid #3498db;
   display: block;
   margin: 0 auto 1.5rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* About Section */
 #about p {
   text-align: center;
   font-size: 1.1rem;
@@ -156,6 +158,26 @@ body.dark .dark-mode-toggle {
   background-color: #2980b9;
 }
 
+/* LinkedIn Button */
+.linkedin-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0077b5, #00a0dc);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.linkedin-btn:hover {
+  background: linear-gradient(135deg, #005983, #0077b5);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.5);
+  transform: translateY(-2px);
+}
+
 /* Footer */
 footer {
   background: #2c3e50;
@@ -198,7 +220,7 @@ body.dark .project a {
   }
 
   .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 }
