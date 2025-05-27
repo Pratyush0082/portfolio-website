@@ -5,43 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pratyush Kumar Sahu - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Pratyush Kumar Sahu</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span>Pratyush Kumar Sahu</span></h1>
+      <p>Aspiring Frontend Developer | HTML • CSS • JavaScript</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a beginner web developer learning to build real-world applications. This is my portfolio to showcase what I’m learning, building, and improving upon as I grow in frontend development.</p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a beginner web developer learning to build real-world applications. This portfolio showcases my journey, from learning HTML/CSS to building responsive websites and more.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
         <h3>Portfolio Website</h3>
-        <p>This website! Built using HTML and CSS to showcase my work and learning journey as a frontend developer.</p>
-      </li>
+        <p>This website! Built using HTML and CSS to document and showcase my learning as a frontend developer.</p>
+      </div>
       <!-- Add more projects here -->
-    </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: pratyush@example.com</p>
-    <p>GitHub: <a href="https://github.com/Pratyush0082" target="_blank">Pratyush0082</a></p>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: pratyush@example.com</p>
+      <p>GitHub: <a href="https://github.com/Pratyush0082" target="_blank">Pratyush0082</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Pratyush Kumar Sahu</p>
+    <div class="container">
+      <p>© 2025 Pratyush Kumar Sahu</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

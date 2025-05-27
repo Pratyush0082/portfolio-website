@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,102 +5,78 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f7f9fc;
   color: #333;
 }
 
-/* Header */
-header {
-  background-color: #1e1e2f;
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+header.hero {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header.hero h1 span {
+  color: #ffcc70;
 }
 
 nav {
-  margin-top: 1rem;
+  margin-top: 20px;
 }
 
 nav a {
-  color: #fff;
+  color: #ffcc70;
+  margin: 0 15px;
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: #f7c948;
+  text-decoration: underline;
 }
 
-/* Sections */
-section {
-  padding: 3rem 1.5rem;
-  max-width: 900px;
-  margin: auto;
+.section {
+  padding: 40px 0;
 }
 
 h2 {
-  font-size: 2rem;
-  color: #1e1e2f;
-  margin-bottom: 1rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 
-li {
-  background-color: #fff;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-left: 5px solid #1e1e2f;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+footer {
+  background: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-/* Contact Links */
 a {
-  color: #0077cc;
+  color: #4b6cb7;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #eaeaea;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  nav a {
-    margin: 0;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
 }
