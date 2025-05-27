@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
@@ -14,21 +15,22 @@
   <header class="hero" data-aos="fade-down">
     <div class="container">
       <h1>Hi, I'm <span>Pratyush Kumar Sahu</span></h1>
-      <p>Aspiring Frontend Developer | HTML • CSS • JavaScript</p>
+      <p><span id="typed-text"></span></p>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌓 Toggle Dark Mode</button>
     </div>
   </header>
 
   <!-- About Section -->
   <section id="about" class="section" data-aos="fade-up">
     <div class="container">
-      <img src="images/profile.jpg" alt="Pratyush Kumar Sahu" class="profile-pic" />
+      <img src="images/pratyushhhhhhhhhhhhhhhh.jpg" alt="Pratyush Kumar Sahu" class="profile-pic" />
       <h2>About Me</h2>
-      <p>I’m Pratyush Kumar Sahu, a passionate frontend developer currently exploring real-world projects. I enjoy learning technologies like React, Flask, and machine learning, and I'm building cool things as I go!</p>
+      <p>I’m Pratyush Kumar Sahu, a third-year Information Technology student at KIIT. I specialize in frontend development and AI/ML, with hands-on experience in React, Flask, TensorFlow, and full-stack systems. Passionate about building intelligent solutions and real-world applications.</p>
     </div>
   </section>
 
@@ -38,35 +40,25 @@
       <h2>Projects</h2>
 
       <div class="project" data-aos="zoom-in">
-        <img src="images/portfolio.png" alt="Portfolio Website" />
         <h3>Portfolio Website</h3>
-        <p>This website! Built using HTML and CSS, hosted on GitHub Pages to document my frontend journey.</p>
+        <p>This personal portfolio is built with HTML and CSS, showcasing my work in frontend and ML. Hosted on GitHub Pages.</p>
         <a href="https://pratyush0082.github.io/portfolio-website/" target="_blank">🔗 Live Demo</a> |
         <a href="https://github.com/Pratyush0082/portfolio-website" target="_blank">💻 GitHub Repo</a>
       </div>
 
       <div class="project" data-aos="zoom-in">
-        <img src="images/weather-dashboard.png" alt="Weather Dashboard" />
         <h3>Weather Dashboard</h3>
-        <p>Weather app using OpenWeatherMap API. Displays current weather, 5-day forecast, and dynamic UI changes.</p>
-        <a href="#" target="_blank">🔗 Live Demo</a> |
-        <a href="#" target="_blank">💻 GitHub Repo</a>
+        <p>Real-time weather application using OpenWeatherMap API. Displays current temperature, a 5-day forecast, and updates UI based on weather.</p>
       </div>
 
       <div class="project" data-aos="zoom-in">
-        <img src="images/music-recommendation.png" alt="Music Recommendation System" />
         <h3>Music Recommendation System</h3>
-        <p>Built with Flask and Python. Suggests songs based on user mood and preferences using ML algorithms.</p>
-        <a href="#" target="_blank">🔗 Live Demo</a> |
-        <a href="#" target="_blank">💻 GitHub Repo</a>
+        <p>Flask + Python project recommending music based on user mood using ML algorithms and sentiment analysis.</p>
       </div>
 
       <div class="project" data-aos="zoom-in">
-        <img src="images/stock-predictor.png" alt="Stock Trend Prediction" />
         <h3>Chaotic Whispers: Stock Trend Prediction</h3>
-        <p>Uses LSTM and Transformer-based deep learning models to analyze market sentiment and forecast stock prices.</p>
-        <a href="#" target="_blank">🔗 Live Demo</a> |
-        <a href="#" target="_blank">💻 GitHub Repo</a>
+        <p>Deep learning system using LSTM and Transformer models to predict stock market trends by analyzing financial news and sentiment data.</p>
       </div>
     </div>
   </section>
@@ -79,6 +71,7 @@
       <p>Phone: 7978893102</p>
       <p>GitHub: <a href="https://github.com/Pratyush0082" target="_blank">Pratyush0082</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/pratyush-kumar-sahu-157613259/" target="_blank">My LinkedIn Profile</a></p>
+      <p><a href="resume.pdf" download class="resume-btn">📄 Download Resume</a></p>
     </div>
   </section>
 
@@ -97,5 +90,23 @@
       once: true
     });
   </script>
+
+  <!-- Typing Animation Script -->
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Aspiring Developer", "AI/ML Enthusiast", "Frontend Engineer", "Full Stack Learner"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
 </body>
 </html>
